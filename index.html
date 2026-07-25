@@ -20,12 +20,20 @@
          width: 100%;
          display: flex;
          gap: 50px;
-         justify-content: space-around;
+         justify-content: center;
          background-color: #f3f0e7;
          padding: 10px 0;
+         font-size: clamp(11px, 4vw, 16px);
        }
-       
-       a {
+       .link-wrapper {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         width: 100%;
+         max-width: 300px;
+         text-align: center;
+         white-space: nowrap;
+       }
+        a {
          text-decoration: none;   
          color: black;        
        }
@@ -56,8 +64,10 @@
     <h1>THOMAS SWINDELL</h1>
     <h1>
       <div class="link-container">
-        <a href="https://thomasswindell.bandcamp.com"; target="_blank" rel="noopener noreferrer">bandcamp</a>
-        <a href="https://tilling.earth"; target="_blank" rel="noopener noreferrer">tilling.earth</a>
+        <div class="link-wrapper">
+           <a href="https://thomasswindell.bandcamp.com"; target="_blank" rel="noopener noreferrer">bandcamp</a>
+           <a href="https://tilling.earth"; target="_blank" rel="noopener noreferrer">tilling.earth</a>
+        </div>
       </div>
     </h1>
     <hr>
