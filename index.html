@@ -29,9 +29,14 @@
          grid-template-columns: 1fr 1fr;
          width: 100%;
          max-width: 350px;
-         justify-items: [left] right;
          white-space: nowrap;
        }
+       .link-wrapper > * {
+          text-align: left;
+        }
+        .link-wrapper > *:last-child {
+          text-align: right;
+        }
         a {
          text-decoration: none;   
          color: black;        
